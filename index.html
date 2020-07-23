@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+   <section>
+      <!--iPhone area-->
+      <div class="container">
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>iPhone 11 128GB Black</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="iPhoneMinusBtn" class="btn btn-default" ><i class="fas fa-minus">-</i></button>
+                           <input id="iPhoneQuantity" type="text" class="form-control text-center" value="1">
+                           <button id="iPhonePlusBtn" class="btn btn-default"><i class="fas fa-plus"></i>+</button>
+                        </div>
+                        <h5>$ <span id="currentPhnPrice">1219</span></h5>
+                        <button id="cancelPhnBtn"> <img  src="images/remove.png" alt="" class="remove-item"></button>
+                       
+                     </div>
+                  </div>
+               </div>
+<!--case area-->
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>iPhone 11 Silicone Case - Black</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="caseMinusBtn" class="btn btn-default"><i class="fas fa-minus">-</i></button>
+                           <input id="caseQuantity" type="text" class="form-control text-center" value="1">
+                           <button id="casePlusBtn" class="btn btn-default"><i class="fas fa-plus">+</i></button>
+
+                        </div>
+                        <h5>$ <span id="currentCasePrice">59</span></h5>
+                        <button id="cancelCaseBtn"><img src="images/remove.png" alt="" class="remove-item"></button>
+                        
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+
+                     <div class="col-md-8">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-md-4 status">
+                        <h5>$ <span id="subtotal">0</span></h5>
+                        <h5>$ <span id="tax">0</span></h5>
+                        <h5>$ <span id="total">0</span></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button id="checkoutBtn" type="button" class="btn btn-success check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+<!--script file-->
+   <script src="shoppingCart.js"></script>
+</body>
+
+</html>
