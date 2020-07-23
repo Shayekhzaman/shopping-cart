@@ -50,7 +50,7 @@
       const sum3=sum1+sum2;
       const tax=(sum3/100)*5;
         document.getElementById("subtotal").innerText=sum1+sum2;
-        document.getElementById("tax").innerText=tax.toFixed(2  ``);
+        document.getElementById("tax").innerText=tax.toFixed(2);
         document.getElementById("total").innerText=sum1+sum2+tax;
       })
       function subtotal(id,num){
